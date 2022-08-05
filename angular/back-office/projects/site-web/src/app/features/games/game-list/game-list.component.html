@@ -7,3 +7,7 @@
                   (edition)="editer($event)"
                   titre="Liste des parties"></app-tableau-games>
 
+<app-game-edit *ngIf="gamePresent"
+               [surname]="gameAEditer"
+               (annulerEdition)="annulerEdit()"></app-game-edit>
+

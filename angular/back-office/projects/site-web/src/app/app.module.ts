@@ -5,17 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GameListComponent } from './features/games/game-list/game-list.component';
 import { GamesModule } from './features/games/games.module';
+import { HeaderComponent } from './shared/ui/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     GamesModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    // LoggerService
+  ],
+  bootstrap: [AppComponent, HeaderComponent]
 })
 export class AppModule { }

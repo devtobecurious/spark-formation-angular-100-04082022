@@ -1,4 +1,4 @@
-class Player {
+export class Player {
     private _surname: string;
 
     constructor(surname: string) {
@@ -17,5 +17,5 @@ class Player {
 const player: Player = new Player('Kowalski');
 player.surname = 'Luke';
 
-player.surname = 1;
+// player.surname = 1;
 

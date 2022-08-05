@@ -9,18 +9,15 @@ export class TableauGamesComponent implements OnInit {
   @Input() list: string[] = [];
   @Input() titre: string = '';
 
-  @Output() edition = new EventEmitter();
+  @Output() edition = new EventEmitter<string>();
 
   constructor() { }
 
   ngOnInit(): void {
-    this.edition.emit('test1');
-    this.edition.emit('test2');
-    this.edition.emit('test3');
   }
 
-  clickPourEditer(): void  {
-    this.edition.emit('test');
+  clickPourEditer(item: string): void  {
+    this.edition.emit(item);
   }
 
   get yaDesLignes(): boolean {
