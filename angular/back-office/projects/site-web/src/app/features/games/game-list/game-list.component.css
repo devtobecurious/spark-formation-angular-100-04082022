@@ -1,0 +1,9 @@
+table td {
+  background-color: darkcyan;
+  color: white;
+}
+
+table td.yes {
+  background-color: green;
+  color: white;
+}

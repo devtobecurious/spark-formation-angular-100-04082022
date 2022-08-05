@@ -1,0 +1,9 @@
+<h2>{{ sousTitre }}</h2>
+
+<button (click)="ajoutLigne()">Ajout ligne</button>
+<button (click)="supprimerLigne()">Supprimer ligne</button>
+
+<app-tableau-games [list]="items"
+                  (edition)="editer($event)"
+                  titre="Liste des parties"></app-tableau-games>
+
