@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { GameListComponent } from './game-list/game-list.component';
 import { TableauGamesComponent } from './tableau-games/tableau-games.component';
 import { GameEditComponent } from './game-edit/game-edit.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -13,7 +14,8 @@ import { GameEditComponent } from './game-edit/game-edit.component';
     GameEditComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
     GameListComponent

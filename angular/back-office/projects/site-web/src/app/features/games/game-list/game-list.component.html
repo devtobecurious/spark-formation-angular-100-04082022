@@ -3,6 +3,18 @@
 <button (click)="ajoutLigne()">Ajout ligne</button>
 <button (click)="supprimerLigne()">Supprimer ligne</button>
 
+<div>
+  <h3 class="sousTitre">Filtres du tableau</h3>
+  <div>
+    <label>
+      Personnage utilisé dans la partie :
+    </label>
+    <select>
+      <!-- <option value="" *ngFor="let people of peopleList$ | async"></option> -->
+    </select>
+  </div>
+</div>
+
 <app-tableau-games [list]="items"
                   (edition)="editer($event)"
                   titre="Liste des parties"></app-tableau-games>

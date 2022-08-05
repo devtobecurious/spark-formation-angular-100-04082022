@@ -9,6 +9,10 @@ export class GameEditComponent implements OnInit {
   @Input() surname: string = '';
   @Output() annulerEdition = new EventEmitter<void>();
 
+  game = {
+    surname: ''
+  }
+
   constructor() { }
 
   ngOnInit(): void {

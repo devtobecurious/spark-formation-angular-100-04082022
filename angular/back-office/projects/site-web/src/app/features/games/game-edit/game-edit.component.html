@@ -1,7 +1,12 @@
+<i>Debug : {{ game | json }}</i>
+
 <h2>Edition de {{ surname }}</h2>
 <form>
-  <input type="text" value="{{ surname }}">
+  <input required type="text" [(ngModel)]="game.surname" name="surname" />
 
-  <button type="button">Sauvegarder</button>
+  <button type="submit">Sauvegarder</button>
   <button type="button" (click)="clickSurAnnuler()">Annuler</button>
 </form>
+
+
+<input type="text" [(ngModel)]="game.surname" name="surname" />
